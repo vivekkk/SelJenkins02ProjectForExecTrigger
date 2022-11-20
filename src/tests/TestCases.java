@@ -39,7 +39,7 @@ public class TestCases {
 
 				for (int j = 0; j <= er.getTotalcolNum() - 1; j++) {
 					obj[i][j] = er.getData(null, i, j);
-					// System.out.println(obj[i][j]);
+					
 				}
 			}
 		} catch (Exception e) {
