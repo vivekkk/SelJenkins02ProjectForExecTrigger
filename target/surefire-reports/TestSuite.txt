@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.254 s <<< FAILURE! - in TestSuite
-tests.TestCases2.testCase02  Time elapsed: 0.032 s  <<< FAILURE!
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.304 s <<< FAILURE! - in TestSuite
+tests.TestCases2.testCase02  Time elapsed: 0.029 s  <<< FAILURE!
 java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
@@ -51,7 +51,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFW
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
 	... 38 more
 
-tests.TestCases.testcse01  Time elapsed: 0.005 s  <<< FAILURE!
+tests.TestCases.testcse01  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
