@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import data.dataFromExcel;
 import selTestCases.PagesMasterClass;
 
-public class TestCases2 {
+public class TestCases2Test {
 
 	@Test(dataProviderClass = dataFromExcel.class, dataProvider = "dp1")
 	void testCase02(String browser, String email) {

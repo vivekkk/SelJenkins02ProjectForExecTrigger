@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import excelReadingUtilities.ExcelReading;
 
-public class TestCases {
+public class TestCasesTest {
 
 	@Test(dataProvider = "getDataForExec")
 	public void testcse01(String name, String place, String thing, String data) throws Throwable {
