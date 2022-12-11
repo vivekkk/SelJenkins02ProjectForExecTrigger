@@ -1,5 +1,0 @@
-# Created at 2022-11-27T08:42:48.259
-Boot Manifest-JAR contains absolute paths in classpath 'D:\SelJenKins02Proj\SelJenkins02ProjectForExecTrigger\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-

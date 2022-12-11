@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.TestCases2Test" class="method navigator-link" hash-for-method="testCase02">testCase02</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.TestCases2Test" class="method navigator-link" hash-for-method="testCase02(edge, edge@gmail.com)">testCase02(edge, edge@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TestCases2Test" class="method navigator-link" hash-for-method="testCase02(firefox, firefox@gmail.com)">testCase02(firefox, firefox@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.TestCases2Test" class="method navigator-link" hash-for-method="testCase02(chrome, vivekkaushik82@gmail.com)">testCase02(chrome, vivekkaushik82@gmail.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,34 +160,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.TestCases2Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase02">
-                  </a> <!-- testCase02 -->
-                  <span class="method-name">testCase02</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
-	at excelReadingUtilities.ExcelReading.&lt;init&gt;(ExcelReading.java:63)
-	at data.dataFromExcel.dataProviderForBroser(dataFromExcel.java:18)
-	... 29 more
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbook
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
-	... 38 more
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">tests.TestCasesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -186,35 +168,80 @@ Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFW
                   <a name="testcse01">
                   </a> <!-- testcse01 -->
                   <span class="method-name">testcse01</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void tests.TestCasesTest.testcse01(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Throwable] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testcse01([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3])
+Arguments: [(java.lang.String) Browser,(java.lang.String) Email]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.NoClassDefFoundError: org/apache/poi/xssf/usermodel/XSSFWorkbook
-	at excelReadingUtilities.ExcelReading.&lt;init&gt;(ExcelReading.java:63)
-	at tests.TestCasesTest.getDataForExec(TestCasesTest.java:32)
-	... 29 more
-Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFWorkbook
-	... 38 more
-... Removed 36 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.TestCases2Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="simpletest">
-                  </a> <!-- simpletest -->
-                  <span class="method-name">simpletest</span>
+                  <a name="testCase02(edge, edge@gmail.com)">
+                  </a> <!-- testCase02(edge, edge@gmail.com) -->
+                  <span class="method-name">testCase02</span>
+                  <span class="parameters">(edge,edge@gmail.com)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.get(String)&quot; because &quot;remoteDriver&quot; is null
+	at tests.TestCases2Test.testCase02(TestCases2Test.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase02(firefox, firefox@gmail.com)">
+                  </a> <!-- testCase02(firefox, firefox@gmail.com) -->
+                  <span class="method-name">testCase02</span>
+                  <span class="parameters">(firefox,firefox@gmail.com)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.get(String)&quot; because &quot;remoteDriver&quot; is null
+	at tests.TestCases2Test.testCase02(TestCases2Test.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase02(chrome, vivekkaushik82@gmail.com)">
+                  </a> <!-- testCase02(chrome, vivekkaushik82@gmail.com) -->
+                  <span class="method-name">testCase02</span>
+                  <span class="parameters">(chrome,vivekkaushik82@gmail.com)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.get(String)&quot; because &quot;remoteDriver&quot; is null
+	at tests.TestCases2Test.testCase02(TestCases2Test.java:18)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -233,6 +260,21 @@ Caused by: java.lang.ClassNotFoundException: org.apache.poi.xssf.usermodel.XSSFW
                   <a name="testcase03">
                   </a> <!-- testcase03 -->
                   <span class="method-name">testcase03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestCases2Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpletest">
+                  </a> <!-- simpletest -->
+                  <span class="method-name">simpletest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,32 +332,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'simpletest')
+data.setCell(0, 1, 'testCase02')
 data.setCell(0, 2, 'tests.TestCases2Test')
-data.setCell(0, 3, 12);
+data.setCell(0, 3, 2215);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testcase03')
-data.setCell(1, 2, 'tests.TestCasesTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'testCase02')
+data.setCell(1, 2, 'tests.TestCases2Test')
+data.setCell(1, 3, 2206);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testcase02')
-data.setCell(2, 2, 'tests.TestCasesTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 1, 'testCase02')
+data.setCell(2, 2, 'tests.TestCases2Test')
+data.setCell(2, 3, 2200);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testcse01')
 data.setCell(3, 2, 'tests.TestCasesTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 136);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCase02')
+data.setCell(4, 1, 'simpletest')
 data.setCell(4, 2, 'tests.TestCases2Test')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 12);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testcase03')
+data.setCell(5, 2, 'tests.TestCasesTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testcase02')
+data.setCell(6, 2, 'tests.TestCasesTest')
+data.setCell(6, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 ms</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -346,16 +396,34 @@ return data;
                 <span class="method-name">simpletest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase02(chrome, vivekkaushik82@gmail.com)</span>
+                <span class="method-start">1692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase02(firefox, firefox@gmail.com)</span>
+                <span class="method-start">1693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase02(edge, edge@gmail.com)</span>
+                <span class="method-start">1694 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TestCasesTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testcase02</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">3925 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testcase03</span>
-                <span class="method-start">50 ms</span>
+                <span class="method-start">3928 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

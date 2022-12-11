@@ -55,7 +55,7 @@ public class PagesMasterClass {
 				FirefoxOptions options = new FirefoxOptions();
 				options.merge(cap);
 			}
-			RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/"), cap, false);
+			RemoteWebDriver remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/"), cap);
 			return remoteDriver;
 		} catch (Throwable e) {
 
