@@ -1,0 +1,7 @@
+data\dataFromExcel.class
+excelReadingUtilities\ExcelReading.class
+selTestCases\PagesMasterClass.class
+dataUtils\BrowserAndCapabilities.class
+selTestCases\HomePage.class
+tests\TestCasesTest.class
+tests\TestCases2Test.class
